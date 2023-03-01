@@ -1,0 +1,15 @@
+{
+  "name": "test-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "\"1er trabajo automatizacion 21/02/23\"",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "\"ADC\"",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "cypress": "^12.6.0"
+  }
+}
