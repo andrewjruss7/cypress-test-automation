@@ -1,4 +1,9 @@
+import { faker } from '@faker-js/faker';
+
 describe('Login', function () {
+
+    const fakeEmail = faker.internet.email();
+    const fakePassword = faker.internet.password();
 
     beforeEach( function() { // Antes de cada prueba ejecuta el código siguiente:
         // Visitando el sitio web de pruebas
@@ -10,6 +15,6 @@ describe('Login', function () {
     });
 
     it("Login fail", function () {
-        cy.LoginMariaCrack('test@fake.com', 'fake123', "Log in")
+        cy.LoginMariaCrack(fakeEmail, fakePassword, "Log in")
     });
 });
