@@ -1,10 +1,10 @@
   [{
-    "un": "liceth@liceth.com",
+    "user": "liceth@liceth.com",
     "pass": "12345678",
     "body": "Welcome liceth@liceth.com"
   },
 {
-    "un" : "fake@test.com",
+    "user" : "fake@test.com",
     "pass" : "fake123",
     "body" : "Log in"
   }]

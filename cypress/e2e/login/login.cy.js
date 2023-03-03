@@ -4,13 +4,13 @@ describe('Login', function () {
         // Visitando el sitio web de pruebas
         cy.visit(Cypress.env("baseUrl"));
         cy.url().should('include', Cypress.env("baseUrl"));
-        cy.fixture('Login.json').as('fx')
+        cy.fixture('Login.json').as('Logindata')
         
     }); 
     it('Login Success', function () {
-        cy.LoginMariaCrack(this.fx[0].un, this.fx[0].pass, this.fx[0].body);      
+        cy.LoginMariaCrack(this.Logindata[0].user, this.Logindata[0].pass, this.Logindata[0].body);      
     });
     it('Login fail', function () {
-        cy.LoginMariaCrack(this.fx[1].un, this.fx[1].pass, this.fx[1].body);      
+        cy.LoginMariaCrack(this.Logindata[1].user, this.Logindata[1].pass, this.Logindata[1].body);      
     });
 });
