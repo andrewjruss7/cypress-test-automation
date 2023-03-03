@@ -10,7 +10,6 @@ class ContactPO {
 
         return this.elements.buttonContact()
     }
-
     inputEmail(){
         return this.elements.inputContactEmail()
     }

@@ -12,4 +12,4 @@ describe('Login', function () {
     it("Login fail", function () {
         cy.LoginMariaCrack('test@fake.com', 'fake123', "Log in")
     });
-});
+}); 
